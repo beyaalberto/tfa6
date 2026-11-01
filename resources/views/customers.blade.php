@@ -5,14 +5,14 @@
 @section('content')
     <h2>Customer Accounts</h2>
 
-    <p>Total customers: {{ count($customers) }}</p>
+    <p>Total customers: {{ $customers->count() }}</p>
 
     <div class="table-wrapper">
         <table>
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Name</th>
+                    <th>Full Name</th>
                     <th>Email</th>
                     <th>Phone</th>
                 </tr>
@@ -21,10 +21,10 @@
             <tbody>
                 @foreach ($customers as $customer)
                     <tr>
-                        <td>{{ $customer['id'] }}</td>
-                        <td>{{ $customer['name'] }}</td>
-                        <td>{{ $customer['email'] }}</td>
-                        <td>{{ $customer['phone'] }}</td>
+                        <td>{{ $customer->id }}</td>
+                        <td>{{ $customer->full_name }}</td>
+                        <td>{{ $customer->email }}</td>
+                        <td>{{ $customer->phone }}</td>
                     </tr>
                 @endforeach
             </tbody>

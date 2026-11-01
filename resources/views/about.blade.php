@@ -20,5 +20,5 @@
         a Customer Accounts page, and a User Accounts page.
     </p>
 
-    <p>Developed by: Replace with your name or group name.</p>
+    <p>Developed by: Beatrice Rae Ann C. Alberto TC37.</p>
 @endsection
